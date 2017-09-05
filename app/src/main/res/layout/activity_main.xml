@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="16dp"
+    android:background="#7FB3D5"
+    tools:context="com.example.rkrmills.sqliteapp.MainActivity">
+
+
+    <TextView
+        android:text="Username"
+        android:layout_marginTop="15dp"
+        android:textStyle="bold"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/tv1"
+        android:textSize="20sp" />
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:inputType="textPersonName"
+        android:ems="10"
+        android:layout_alignParentRight="true"
+        android:id="@+id/editText1_username"
+        android:layout_alignLeft="@+id/editText2_pwd"
+        android:layout_alignStart="@+id/editText2_pwd" />
+
+    <TextView
+        android:text="Password"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textStyle="bold"
+        android:layout_below="@+id/editText1_username"
+        android:layout_marginTop="15dp"
+        android:id="@+id/tv2"
+        android:textSize="20sp" />
+
+    <Button
+        android:text="INSERT"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_centerVertical="true"
+        android:id="@+id/button_insert" />
+
+    <Button
+        android:text="VIEW"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/btn_view"
+        android:layout_marginTop="15dp"
+        android:layout_below="@+id/button_insert"
+       android:layout_centerHorizontal="true" />
+
+    <Button
+        android:text="UPDATE"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="15dp"
+        android:id="@+id/btn_update"
+        android:layout_below="@+id/btn_view"
+        android:layout_centerHorizontal="true" />
+
+    <TextView
+        android:text="ID"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textStyle="bold"
+        android:id="@+id/tv3"
+        android:layout_marginTop="15dp"
+        android:textSize="20sp"
+        android:layout_below="@+id/tv2" />
+
+    <Button
+        android:text="DELETE"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="15dp"
+        android:id="@+id/btn_delete"
+        android:layout_below="@+id/btn_update"
+        android:layout_alignLeft="@+id/btn_update"
+        android:layout_alignStart="@+id/btn_update" />
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:inputType="textPersonName"
+        android:ems="10"
+        android:id="@+id/editText_ID"
+        android:layout_below="@+id/editText2_pwd"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true"
+        android:layout_alignLeft="@+id/editText2_pwd"
+        android:layout_alignStart="@+id/editText2_pwd" />
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:inputType="textPassword"
+        android:ems="10"
+        android:id="@+id/editText2_pwd"
+        android:layout_alignBaseline="@+id/tv2"
+        android:layout_alignBottom="@+id/tv2"
+        android:layout_alignLeft="@+id/button_insert"
+        android:layout_alignStart="@+id/button_insert"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true" />
+
+</RelativeLayout>
